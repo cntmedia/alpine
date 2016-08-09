@@ -1,0 +1,10 @@
+version: '2'
+services:
+    alpine.dev:
+        image: alpine:3.4
+        container_name: alpine.container
+        build: .
+        #USE VOLUMES INSTEAD OF ADD OR COPY INSIDE THE DOCKERFILE
+        #WILL REMOVE ANY PERMISSIONS ISSUES
+        # volumes:
+        #      - ./src:/src
